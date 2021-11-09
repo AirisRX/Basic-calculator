@@ -7,36 +7,36 @@ using namespace std;
 int main()
 {
 
-float x, y, z; // Skaičiai
+float x, y, z; // Numbers
 char zenklas;
 
-        // Sužinome pagrindinius duomenis
-    cout << "Basic calculator V1" << endl << "Sveiki. Įveskite pirmą skaičių: " << endl;
+        // Inputting data
+    cout << "Basic calculator V1" << endl << "Hello, please input your first number: " << endl;
     cin >> x;
-    cout << "Pasirinkite ženklą (+, -, *, /): " << endl;
+    cout << "Select a operator (+, -, *, /): " << endl;
     cin >> zenklas;
-    cout << "Įveskite antrą skaičių: " << endl;
+    cout << "Input your second number: " << endl;
     cin >> y;
 
     switch(zenklas) {
         case '+':
-        cout << "Atsakymas: " << x + y << endl << "Geros dienos. ";
+        cout << "Answer: " << x + y << endl << "Have a good day. ";
         break;
 
         case '-':
-        cout << "Atsakymas: " << x - y << endl << "Geros dienos. ";
+        cout << "Answer: " << x - y << endl << "Have a good day. ";
         break;
 
         case '*':
-        cout << "Atsakymas: " << x * y << endl << "Geros dienos. ";
+        cout << "Answer: " << x * y << endl << "Have a good day. ";
         break;
 
         case '/':
-        cout << "Atsakymas: " << x / y << endl << "Geros dienos. ";
+        cout << "Answer: " << x / y << endl << "Have a good day. ";
         break;
 
         default: 
-        cout << "Įvestas neteisingas ženklas, bandykite iš naujo. ";
+        cout << "You have entered an invalid operator. Please try again. ";
     }
 
     return 0;
